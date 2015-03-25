@@ -16,7 +16,7 @@ setImmediate(foo);
 process.nextTick(bar);
 baz();
 
-// Dans l'ordre ça afficher :
+// Dans l'ordre cela va afficher :
 //   baz (sync)
 //   bar (nextTick)
 //   foo (setImmediate)
