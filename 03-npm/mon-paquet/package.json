@@ -1,0 +1,106 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  
+  
+  "private": true,
+
+  
+  "name": "mon-paquet",
+
+  
+  "version": "1.0.0",
+
+  
+  
+  
+  
+  "license": "ISC",
+
+  
+  "description": "mon tout premier paquet qui ne fait pas grand chose",
+
+  
+  
+  
+  
+  
+  "keywords": [
+    "foo",
+    "bar"
+  ],
+
+  
+  
+  "homepage": "http://acme.fr/mon-paquet/",
+
+  
+  
+  "bugs": "http://acme.fr/mon-paquet/issues/",
+
+  
+  "repository": {
+    "type": "git",
+    "url": "git://acme.fr/mon-paquet.git"
+  },
+
+  
+  "author": {
+    "name": "Dupont, François",
+    "email": "francois.dupont@acme.fr",
+    "url": "http://acme.fr/~francois.dupont/"
+  },
+
+  
+  
+  
+  
+  
+  "preferGlobal": true,
+
+  
+  
+  
+  "main": "./cli.js",
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  "dependencies": {
+    "debug": "^2.0.0",
+    "exec-promise": "^0.5.0"
+  },
+
+  
+  
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+
+  
+  
+  "scripts": {
+
+    
+    "test": "mocha cli.spec.js"
+  }
+}

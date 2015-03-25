@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "dependencies": {
+    "from2": "^1.2.0",
+    "readable-stream": "^1.0.33",
+    "through2": "^0.6.3"
+  }
+}

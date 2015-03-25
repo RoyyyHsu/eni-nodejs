@@ -1,0 +1,106 @@
+// Ce fichier est un exemple de package.json, il ne contient pas
+// toutes les entrées possibles, seulement les plus courants.
+
+// Les commentaires JavaScript ne sont pas autorisés dans le fichier
+// package.json, c'est pour cela que ce fichier est fourni en plus
+// afin d'expliquer les différentes entrées.
+//
+// Le fichier package.json est construit à partir de celui-ci avec la
+// commande suivante (fournie dans le paquet `strip-json-comments`):
+//
+// ```
+// > strip-json-comments < commented-package.json > package.json
+// ```
+
+{
+  // Indique que ce paquet ne doit pas être publié dans le registre
+  // publique.
+  "private": true,
+
+  // Nom du paquet.
+  "name": "mon-paquet",
+
+  // Version sémantique du paquet (http://semver.org).
+  "version": "1.0.0",
+
+  // Licence du code (surtout important si le paquet est publié).
+  //
+  // Ici ISC (Internet Software Consortium license), une licence
+  // simplifiée des licence BSD et MIT.
+  "license": "ISC",
+
+  // Description du paquet.
+  "description": "mon tout premier paquet qui ne fait pas grand chose",
+
+  // Mots clefs du paquet (important pour la recherche dans le
+  // registre).
+  //
+  // Ils devraient être en anglais car la communauté Node est
+  // internationale.
+  "keywords": [
+    "foo",
+    "bar"
+  ],
+
+  // Site web du paquet où un utilisateur peut trouver des
+  // informations (docs, etc.).
+  "homepage": "http://acme.fr/mon-paquet/",
+
+  // Page où un utilisateur peut rapporter les bogues, soucis ou idées
+  // d'amélioration du paquet.
+  "bugs": "http://acme.fr/mon-paquet/issues/",
+
+  // Dépôt où le code source de ce paquet peut être trouvé.
+  "repository": {
+    "type": "git",
+    "url": "git://acme.fr/mon-paquet.git"
+  },
+
+  // Auteur du paquet.
+  "author": {
+    "name": "Dupont, François",
+    "email": "francois.dupont@acme.fr",
+    "url": "http://acme.fr/~francois.dupont/"
+  },
+
+  // Si défini et vrai (`true`), ce champ indique que le paquet
+  // devrait être installé globalement.
+  //
+  // Ce champ est principalement utilisé quand le paquet contient un
+  // programme autonome (comme `jshint` par exemple).
+  "preferGlobal": true,
+
+  // Si ce paquet est un module Node et que le fichier d'entrée n'est
+  // pas `index.js`, il est nécessaire de renseigner ce champ avec le
+  // chemin correct.
+  "main": "./cli.js",
+
+  // Liste des exécutables à installer à partir de ce paquet.
+  //"bin": {
+  //
+  //  // Installe l'exécutable `mon-paquet` à partir du fichier
+  //  // `cli.js`.
+  //  "mon-paquet": "cli.js"
+  //},
+
+  // Liste des dépendances de production du paquet.
+  "dependencies": {
+    "debug": "^2.0.0",
+    "exec-promise": "^0.5.0"
+  },
+
+  // Liste des dépendances de développement du paquet (qui ne seront
+  // pas installées en production).
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+
+  // Défini les scripts qui peuvent être exécutés avec
+  // `npm run-script <nom>`.
+  "scripts": {
+
+    // Script standard qui peut être exécuté directement via `npm test`.
+    "test": "mocha cli.spec.js"
+  }
+}
