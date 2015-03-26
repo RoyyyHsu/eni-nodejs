@@ -14,7 +14,7 @@ var expect = require('chai').expect;
 describe('cli()', function () {
   it('returns the expected message', function () {
     expect(cli([])).to.equal('Bonjour tout le monde !');
-  })
+  });
 
   it('returns the expected help message if --help is passed', function () {
     expect(cli(['--help'])).to.equal('Message d\'aide.');
