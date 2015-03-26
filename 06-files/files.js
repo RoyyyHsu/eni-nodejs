@@ -46,7 +46,6 @@ fs.chmod(__filename, '644', function (error) {
 //====================================================================
 // Changement des dates d'accès et de modification.
 
-
 var atime = new Date('2012-09-17');
 var mtime = new Date('2012-07-04');
 
@@ -89,4 +88,7 @@ fs.writeFile(tmpFile, 'mon contenu', function (error) {
 
   fs.unlink(tmpFile, function () {});
 });
+
+//====================================================================
+// Lecture et écriture via les flux.
 

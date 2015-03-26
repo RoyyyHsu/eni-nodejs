@@ -55,13 +55,13 @@ mkdirp(tmpTree + '/foo/bar/baz', function (error) {
     return;
   }
 
-  console.log('arborescence créé');
+  console.log('arborescence créée');
   rimraf(tmpTree, function (error) {
     if (error) {
       console.error('échec de suppression de l\'arborescence', error);
       return;
     }
 
-    console.log('arborescence supprimé');
+    console.log('arborescence supprimée');
   });
 });

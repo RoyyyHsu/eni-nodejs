@@ -2,18 +2,32 @@
 
 //====================================================================
 
+// Importe la fonction `expect()` fournie par la bibliothèque
+// d'assertions chai (http://chaijs.com/).
 var expect = require('chai').expect;
 
 //====================================================================
 
+// La fonction `describe()` déclare une suite de tests.
 describe('Array', function () {
 
+  // La fonction `beforeEach()` enregistre une fonction à exécuter
+  // avant chaque test.
+  //
+  // Symétriquement, la fonction `afterEach()` enregistre une fonction
+  // à exécuter après chaque test.
+  //
+  // Il existe aussi les fonctions `before()` et `after()` qui
+  // enregistre des fonctions à exécuter au début et à la fin de la
+  // suite de tests complète.
   beforeEach(function () {
     this.array = ['foo', 'bar', 'baz'];
   });
 
+  // Les suites de tests peuvent être imbriquées.
   describe('.length', function () {
 
+    // La fonction `it()` enregistre un test dans la suite courante.
     it('returns the number of items', function () {
       expect(this.array).to.have.a.property('length').that.equal(3);
     });
