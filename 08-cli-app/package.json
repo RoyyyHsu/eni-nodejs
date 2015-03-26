@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "dependencies": {
+    "event-to-promise": "^0.3.2",
+    "exec-promise": "^0.5.1",
+    "express": "^4.12.3",
+    "minimist": "^1.1.1",
+    "serve-static": "^1.9.2"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha cli.spec.js"
+  }
+}
