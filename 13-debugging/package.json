@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "devDependencies": {
+    "node-inspector": "*"
+  },
+  "dependencies": {
+    "bluebird": "^2.0.0",
+    "debug": "^2.0.0"
+  }
+}
