@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "devDependencies": {
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.3",
+    "watchify": "^2.6.1"
+  },
+  "browserify": {
+  	"transform": [
+  		["babelify", {
+  			"extensions": [".es6"]
+  		}]
+  	]
+  },
+  "scripts": {
+  	"build": "browserify --outfile=dist.js --extension=.es6 index.js",
+  	"dev": "watchify --outfile=dist.js --extension=.es6 index.js"
+  }
+}
