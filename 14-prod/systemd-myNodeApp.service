@@ -1,0 +1,14 @@
+# systemd service for my Node app
+[Unit]
+Description=My Node App
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/env node /srv/mynodeapp/server/index.js
+Environment=NODE_ENV=production
+Restart=always
+SyslogIdentifier=mynode-app
+User=nobody
+
+[Install]
+WantedBy=multi-user.target
