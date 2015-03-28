@@ -5,7 +5,7 @@ var readFile = require('fs').readFile;
 
 //====================================================================
 
-// Une promesse peut être créer via le constructeur (ici on utilise
+// Une promesse peut être créée via le constructeur (ici on utilise
 // `Bluebird` mais c'est exactement pareil avec l'implémentation
 // standard `Promise`).
 //
